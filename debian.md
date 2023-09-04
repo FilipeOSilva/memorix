@@ -1,11 +1,13 @@
-##Adicionando usuario ao grupo root
+## Adicionando usuario ao grupo root
 ```
 sudo su
 echo "silva   ALL=(ALL:ALL) ALL" > /etc/sudoers.d/silva
 ```
 
-##Editando fontes do *apt*
-Acessar o arquivo e comentar a linha referente ao live CD
+## Editando fontes do *apt*
+
+Acessar o arquivo e comentar a linha referente ao "CD de instalação"
+
 ```
 vi /etc/apt/sources.list
 
