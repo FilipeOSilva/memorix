@@ -48,6 +48,13 @@ $ sudo apt install firmware-realtek
 $ sudo apt install firmware-misc-nonfree
 ```
 
+## Configuração extra do modulo
+
+É necessário a configuração que desabilita o gerenciamento de energia e questões de "plug e desplug":
+```
+echo "options rtl8188fu rtw_power_mgnt=0 rtw_enusbss=0 rtw_ips_mode=0" | sudo tee /etc/modprobe.d/rtl8188fu.conf
+```
+
 ## Configurando a conexão com a rede
 
 Por hora estou usando no terminal o aplicativo *nmtui*, que possui uma interface interessante e de fácil uso, basta adicionar uma conexão, colocar a senha e teremos acesso via WiFi.

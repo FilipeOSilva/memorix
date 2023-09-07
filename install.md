@@ -4,4 +4,5 @@ sudo apt install git \
 		 meld \
 		 build-essential \
 		 dkms \
+		 tcpdump \
 		 tmux
