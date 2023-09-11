@@ -5,4 +5,6 @@ sudo apt install git \
 		 build-essential \
 		 dkms \
 		 tcpdump \
+		 pipx \
+		 pip \
 		 tmux
