@@ -1,3 +1,4 @@
+```
 sudo apt install git \
 		 curl \
 		 vim \
@@ -8,3 +9,4 @@ sudo apt install git \
 		 pipx \
 		 pip \
 		 tmux
+```
