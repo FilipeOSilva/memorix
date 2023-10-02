@@ -44,12 +44,12 @@ Ferramenta utilizada para instalação de "pacotes" Python de forma "global" na 
 
 Pode ser intalado via "pip":
 ```
-$ pip install pipx
+pip install pipx
 ```
 
 Ou via gerenciador de pacotes do sistema (no meu caso distribuições "like Debian", via APT):
 ```
-$ sudo apt install pipx
+sudo apt install pipx
 ```
 
 *_Obs_*.: No meu ambiente, acabei colocando dentro do script de instalação total de pacotes. Ver install.md [https://github.com/FilipeOSilva/memorix/blob/main/install.md]
@@ -59,7 +59,7 @@ $ sudo apt install pipx
 Pode-se adicionar o path do pipx para o seu usuario manualmente (editando o arquivo .bashrc) ou deixar que o proprio pipx faça isso, executando a instrução:
 
 ```
-$ pipx ensurepath
+pipx ensurepath
 ```
 
 ### Poetry
@@ -70,11 +70,11 @@ Gerenciador de pacotes (responsavel por gerir quais bibliotecas, Lint, documenta
 
 Como será global, utilizo o pipx
 ```
-$ pipx install poetry
+pipx install poetry
 ```
 
 #### Iniciando um projeto
 
 ```
-$ poetry new new-project
+poetry new new-project
 ```
