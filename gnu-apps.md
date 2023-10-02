@@ -40,4 +40,4 @@ Para pegar um arquivo de uma máquina temos que saber o endereço, ter o login e
 ```
 scp [login]@[ip_destinatario]:[/home/pasta_do_arquivo/arquivo_recebido.txt] .
 ```
-*OBS*.: Aqui iremos recerber no arquivo na pasta onde estamos.
+*OBS*.: Aqui iremos recerber o arquivo na pasta onde estamos.

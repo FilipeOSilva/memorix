@@ -1,16 +1,46 @@
-# PYTHON
+# Python
 
-Notas e dicas de funcionamento da linguagem de progamação Python
+Notas e dicas de funcionamento da linguagem de progamação Python.
 
-## Ambiente
+## Ambientes
 
-### Feramentas
+Para desenvolvimento local é importante ter um ambiente "*isolado*" do utilizado pelo host.
 
-#### Pipx
+### Instalação
+```
+pipx install virtualenv
+```
+***Obs***.: No meu ambiente, utilizo o *pipx* para instalar itens de forma global.
 
-Ferramenta utilizada para instalação de "pacotes" python de forma "global" na maquina host. Geralmente utilizo o pipx para gerir pacotes "globais" na minha maquina.
+### Criando ambiente
+```
+python3 -m venv ./venv
+```
+### Acessando um ambiente
+```
+source ./venv/bin/activate
+```
+### Instalando itens necessário no ambiente
+```
+pip install -r requirements.txt
+```
+### Criando arquivo com requisitos para aquele ambiente
+```
+pip freeze > requirements.txt #congelar arquivos necessário
+```
+### Saindo de um ambiente
+```
+deactivate # sair do ambiente
+```
 
-##### Instalação
+## Ferramentas
+
+A seguir temos uma lista de "*ferramentas*" que utilizo para gerir meus projetos em Python.
+### Pipx
+
+Ferramenta utilizada para instalação de "pacotes" Python de forma "global" na maquina host. Geralmente utilizo o pipx para gerir pacotes "globais" na minha maquina.
+
+#### Instalação
 
 Pode ser intalado via "pip":
 ```
@@ -24,7 +54,7 @@ $ sudo apt install pipx
 
 *_Obs_*.: No meu ambiente, acabei colocando dentro do script de instalação total de pacotes. Ver install.md [https://github.com/FilipeOSilva/memorix/blob/main/install.md]
 
-##### Configuração
+#### Configuração
 
 Pode-se adicionar o path do pipx para o seu usuario manualmente (editando o arquivo .bashrc) ou deixar que o proprio pipx faça isso, executando a instrução:
 
@@ -32,21 +62,19 @@ Pode-se adicionar o path do pipx para o seu usuario manualmente (editando o arqu
 $ pipx ensurepath
 ```
 
-#### Poetry
+### Poetry
 
-Gerenciador de pacotes (responsavel por gerir quais bibliotecas, Lint, documentação) para organizar o desenvolvimento de um projeto python.
+Gerenciador de pacotes (responsavel por gerir quais bibliotecas, Lint, documentação) para organizar o desenvolvimento de um projeto Python.
 
-##### Instalação
+#### Instalação
 
 Como será global, utilizo o pipx
 ```
 $ pipx install poetry
 ```
 
-##### Iniciando um projeto
+#### Iniciando um projeto
 
 ```
 $ poetry new new-project
 ```
-
-
