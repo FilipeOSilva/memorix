@@ -41,3 +41,17 @@ Para pegar um arquivo de uma máquina temos que saber o endereço, ter o login e
 scp [login]@[ip_destinatario]:[/home/pasta_do_arquivo/arquivo_recebido.txt] .
 ```
 *OBS*.: Aqui iremos recerber o arquivo na pasta onde estamos.
+
+## TAR
+
+Tar é "orenador" de arquivos, seria semelhante a "unir" todos os arquivos em um só. Comumente utilizado com o Gz (GNU Zip) que fica responsavel por compactar essa "tira" em um unico arquivo.
+
+### Compactando tar.gz
+```
+tar -czf [name].tar.gz dir/
+```
+
+### Descompactando tar.gz
+```
+tar -zxvf [name].tar.gz
+```
