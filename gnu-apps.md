@@ -44,7 +44,7 @@ scp [login]@[ip_destinatario]:[/home/pasta_do_arquivo/arquivo_recebido.txt] .
 
 ## TAR
 
-Tar é "orenador" de arquivos, seria semelhante a "unir" todos os arquivos em um só. Comumente utilizado com o Gz (GNU Zip) que fica responsavel por compactar essa "tira" em um unico arquivo.
+Tar é "ordenador" de arquivos, seria semelhante a "unir" todos os arquivos em um só. Comumente utilizado com o Gz (GNU Zip) que fica responsavel por compactar essa "tira" em um unico arquivo.
 
 ### Compactando tar.gz
 ```
@@ -55,3 +55,78 @@ tar -czf [name].tar.gz dir/
 ```
 tar -zxvf [name].tar.gz
 ```
+
+## TMUX
+
+Multiplexador de terminais
+*OBS*.: A tecla (ou combinação) para o PREFIXO é: ctrl + b
+
+### Listando as seções
+```
+tmux ls
+```
+
+### Saindo de uma seção
+Existem duas maneiras, mais usuais de sair de uma seção:
+
+* PREFIXO + d # irá sair da seção sem finaliza-lá
+* exit # irá "matar" a seção
+
+### Criando seção
+```
+tmux new
+```
+
+### Criando seção com nome
+```
+tmux new -s NOME_SEÇÃO
+```
+
+### Criando seção sem entrar
+```
+tmux new -d
+```
+*OBS*.: Pode-se combinar comandos, criando seção com um nome
+```
+tmux new -s NOME_SEÇÃO -d
+```
+
+### Destruindo seções
+
+#### Destruindo uma seção
+```
+tmux kill-session -t NOME_SEÇÃO
+```
+Ou abreveando:
+```
+tmux kill-sessi -t NOME_SEÇÃO
+```
+
+#### Destruindo todas as seções
+```
+tmux kill-server
+```
+
+### Entrando em uma seção
+```
+tmux a -t NOME_SEÇÃO
+```
+
+### Criando uma nova seção dentro de uma seção
+PREFIXO + c
+
+### Circulando entre seções
+PREFIXO + n # proxima (NEXT) seção
+PREFIXO + p # seção (PREVIOUS) anterior
+
+### Divisão de janela na vertical
+PREFIXO + %
+
+### Divisão de janela na horizontal
+PREFIXO + "
+
+### Focando/desfocando de uma janela
+prefixo + z
+
+### Circulando entre as janelas
+prefixo + [DIRECIONAIS DO TECLADO]
