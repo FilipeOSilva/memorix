@@ -8,5 +8,8 @@ sudo apt install git \
 		 tcpdump \
 		 pipx \
 		 pip \
-		 tmux
+		 tmux \
+		 gnome-shell-extension-manager \
+		 gir1.2-gtop-2.0 \
+		 lm-sensors
 ```
