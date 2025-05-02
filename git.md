@@ -1,4 +1,7 @@
-
+## Show resume status
+```
+git status --short
+```
 ## Submodulos
 ```
 git submodule update --init --recursive
