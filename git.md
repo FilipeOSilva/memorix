@@ -56,3 +56,7 @@ git stash && git stash drop
 ```
 git clean -f -d
 ```
+## Criando novo branch
+```
+git checkout -b [Nome_branch] origin/develop
+```

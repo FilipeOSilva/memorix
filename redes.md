@@ -1,3 +1,24 @@
+## Comandos uteis
+### Desativando interface
+```
+sudo ip link set enx00e04c680c91 down
+```
+### Renomeando interface
+```
+sudo ip link set enx00e04c680c91 name eth0
+```
+### Ativando Interface
+```
+sudo ip link set eth0 up
+```
+### Adicionando IP a um interface
+```
+sudo ip addr add 10.10.60.50/24 dev eth0
+```
+### Informações sobre Network manager
+```
+nmcli device show
+```
 ## Rotas
 ```
 ip route list
@@ -57,24 +78,6 @@ sudo iw dev wlp0s20f3 scan | grep SSID:
 ```
 nmcli dev show | grep IP6.DNS
 ```
-## Comandos uteis
-### Desativando interface
-```
-sudo ip link set enx00e04c680c91 down
-```
-### Renomeando interface
-```
-sudo ip link set enx00e04c680c91 name eth0
-```
-### Ativando Interface
-```
-sudo ip link set eth0 up
-```
-### Adicionando IP a um interface
-```
-sudo ip addr add 10.10.60.50/24 dev eth0
-```
-
 ## DHCP
 ```
 sudo vi /etc/dhcp/dhcpd.conf
